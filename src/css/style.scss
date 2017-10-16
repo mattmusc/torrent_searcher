@@ -1,0 +1,41 @@
+/*
+* Sass Style file
+*
+* @author matteo.muscella@mail.com
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+$bootstrap-sass-asset-helper: true;
+
+$gray-base:             rgba(80, 81, 79, 1) !default;
+$gray-darker:             lighten($gray-base, 13.5%) !default;
+$gray-dark:               lighten($gray-base, 20%) !default;
+$gray:                    lighten($gray-base, 33.5%) !default;
+$gray-light:              lighten($gray-base, 46.7%) !default;
+$gray-lighter:            lighten($gray-base, 93.5%) !default;
+
+$brand-primary:         rgba(80, 81, 79, 1) !default;
+$brand-success:         rgba(112, 193, 179, 1) !default;
+$brand-info:            rgba(36, 123, 160, 1) !default;
+$brand-warning:         rgba(255, 224, 102, 1) !default;
+$brand-danger:          rgba(242, 95, 92, 1) !default;
+
+$input-border:          $brand-primary !default;
+$input-border-focus:    $brand-info !default;
+
+$border-radius-base:        0 !default;
+$border-radius-large:       0 !default;
+$border-radius-small:       0 !default;
+
+$base-font-family:          'Open Sans', sans-serif;
+
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap";
+
+* {
+    font-family: $base-font-family;
+}
+
+#searchBox, #controlsDiv, #resultDiv {
+    margin-top: 2em;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <h1>mytorrents</h1>
+                <div id="searchBox" class="input-group input-group-lg">
+                    <input id="searchInput" type="text" class="form-control " placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button id="searchBtn" class="btn btn-primary" type="button">Search!</button>
+                    </span>
+                </div>
+                <!-- /input-group -->
+            </div>
+        </div>
+        <!-- /.row -->
+        <div id="controlsDiv" class="row">
+            <div class="col-xs-12 col-md-5 col-lg-5"></div>
+            <div class="col-xs-12 col-md-5 col-lg-5"></div>
+            <div class="col-xs-12 col-md-2 col-lg-2 text-right">
+                <div class="btn-group" role="group" aria-label="true">
+                    <button type="button" class="btn btn-default">
+                        <i class="fa fa-list-alt" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        <i class="fa fa-list" aria-hidden="true"></i>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div id="resultDiv" class="row"></div>
+    </div>
+</body>
+
+</html>
